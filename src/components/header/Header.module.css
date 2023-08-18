@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: end;
+    padding: 10px 10px 5px;
+    position: relative;
+}
+
+.header >span {
+    font-size: 15px;
+    background-color: #2f9eb6;
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
