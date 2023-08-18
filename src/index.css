@@ -28,3 +28,22 @@ button {
 button:hover {
   background-color: #c77683;
 }
+
+form {
+  padding: 0 10px;
+}
+
+input {
+  border: 1px solid transparent;
+  outline: none;
+  color: #222;
+  padding: 4px 5px;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  transition: border-color .4s ease-in-out;
+  display: block;
+}
+
+input:focus {
+  border-color: #c77683;
+}
