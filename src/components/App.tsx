@@ -8,7 +8,7 @@ import CreateRecipe from './create-recipe/CreateRecipe'
 // const userId = null
 
 const App = () => {
-  const { isLoading, data } = useGetRecipesQuery()
+  const { isLoading, data } = useGetRecipesQuery(null)
     // undefined, {
     // skip: !!userId
   // })

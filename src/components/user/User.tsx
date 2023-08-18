@@ -1,9 +1,9 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
 import { useActions } from '../../hooks/useActions'
+import { useTypedSelector } from '../../hooks/useTypedSelector'
 
 const User = () => {
-    const { isLoading, error, user } = useSelector(state => state.user)
+    const { isLoading, error, user } = useTypedSelector(state => state.user)
     const { getUserById } = useActions()
     
     return (
@@ -12,7 +12,7 @@ const User = () => {
                 Get user
             </button>
             {
-                isLoading ? 'loading' : error ? error.message : user?.name ? 
+                isLoading ? 'loading' : error ? error : user?.name ? 
                 <h1>User: {user.name} </h1> : <h1>User not found</h1>
             }
         </div>
